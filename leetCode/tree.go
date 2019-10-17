@@ -1,6 +1,11 @@
 package leetCode
 
+type XX struct {
+	a int
+}
+
 type TreeNode struct {
+	*XX
 	Val   int
 	Left  *TreeNode
 	Right *TreeNode
@@ -9,6 +14,7 @@ type TreeNode struct {
 // 翻转二叉树
 // 思路
 func invertTree(root *TreeNode) *TreeNode {
+
 	if root == nil { //(1) 考虑异常情况
 		return root
 	}
@@ -21,4 +27,10 @@ func invertTree(root *TreeNode) *TreeNode {
 
 	return root // (5)输出结果
 
+}
+
+func DiameterTree(root *TreeNode) *TreeNode {
+	if root == nil{
+		return root
+	}
 }
