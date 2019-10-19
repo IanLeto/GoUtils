@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/spf13/viper"
 	"goUtils/cmd"
 	"io/ioutil"
 	"os"
@@ -24,9 +25,14 @@ func main() {
 	fmt.Println(t.Zone())
 	fmt.Println(t.UTC())
 
-	loc := time.FixedZone("CST", 3600*4)
+	loc := time.FixedZone("UTC", 3600*2)
 	t.In(loc)
 	fmt.Println(time.ParseInLocation("2006-01-02 03:04:05", "2019-10-15 01:01:24", loc))
+	loc = time.FixedZone("UTC+2", 3600*2)
+	t.In(loc)
+	fmt.Println(time.ParseInLocation("2006-01-02 03:04:05", "2019-10-15 01:01:24", loc))
+	fmt.Println(time.Parse("2006-01-02 03:04:05", "2019-10-15 01:01:24"))
+	fmt.Println(time.Parse("2006-01-02 03:04:05", "2019-10-15 01:01:24"))
 	filePath := "D:\\GoPath\\src\\transfer\\xxx.txt"
 	data := []byte("xx")
 	err := ioutil.WriteFile(filePath, data, 0666)
@@ -34,6 +40,22 @@ func main() {
 		panic(err)
 	}
 
+	viper.SetConfigName("config")
+	viper.AddConfigPath(".")
+	if err := viper.ReadInConfig(); err != nil {
+		panic(err)
+	}
+	var redis ConfigRedis
+	err = viper.Unmarshal(&redis)
+	if err != nil {
+		panic(err)
+	}
+
+}
+
+type ConfigRedis struct {
+	IP string
+	DB int
 }
 
 func CheckFileExist(filePath string) bool {
