@@ -3,20 +3,29 @@ package main
 import (
 	"fmt"
 	"goUtils/cmd"
+	_ "goUtils/eventBusDemo"
 	"io/ioutil"
 	"os"
 	"time"
+	"transfer/eventbus"
 	"transfer/types"
 )
 
 func main() {
+
+	//EventBus.New().Publish("testDemo")
+
+	err := eventbus.Global.Subscribe("testDemo", func() {
+		fmt.Println("梁非凡")
+	})
+	eventbus.Global.Publish("testDemo", func() {
+		fmt.Println("吔屎啦")
+	})
 	if err := cmd.RootCmd.Execute(); err != nil {
 		panic(err)
 	}
 
 	t := time.Now()
-	//a := t
-	//b := t
 	fmt.Println(types.NewTimeStamp(t))
 	fmt.Println(t.Zone())
 	fmt.Println(t.UTC())
@@ -29,7 +38,7 @@ func main() {
 	fmt.Println(time.ParseInLocation("2006-01-02 03:04:05", "2019-10-15 01:01:24", loc))
 	filePath := "D:\\GoPath\\src\\transfer\\xxx.txt"
 	data := []byte("xx")
-	err := ioutil.WriteFile(filePath, data, 0666)
+	err = ioutil.WriteFile(filePath, data, 0666)
 	if err != nil {
 		panic(err)
 	}
