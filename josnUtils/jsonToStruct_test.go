@@ -1,10 +1,11 @@
 package josnUtils_test
 
 import (
-	"goUtils/josnUtils"
+	"GoUtils/josnUtils"
 	"testing"
 )
 
 func TestToJsonDemo(t *testing.T) {
 	josnUtils.ToJsonDemo()
+	josnUtils.JsonToStructWithNil()
 }
