@@ -1,4 +1,4 @@
-package testsuit
+package testsuit_test
 
 import (
 	"github.com/stretchr/testify/assert"
@@ -17,6 +17,13 @@ func TestCalc(t *testing.T) {
 type CliSuite struct {
 	suite.Suite
 }
+
+// BeforeTest(suiteName, testName string) - Runs right before the test starts
+// AfterTest(suiteName, testName string) - Runs right after the test finishes
+// SetupSuite() - Runs before the tests in the suite
+// SetupTest() - Runs before each test in the suite
+// TearDownTest() - Runs after each test in the suite
+// TearDownSuite() - Runs after all the tests in the suite have been run
 
 func (s *CliSuite) SetupTest() {
 
