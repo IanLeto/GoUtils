@@ -38,10 +38,10 @@ func (s *TestServiceSuit) TestBaseService_Check() {
 		ID:      "test",
 		Name:    "11111",
 		Port:    80,
-		Address: "172.17.0.6",
+		Address: "172.17.0.4",
 		Tags:    []string{"12"},
 		Check: &api.AgentServiceCheck{
-			HTTP:     "http://172.17.0.6:80",
+			HTTP:     "http://172.17.0.4:80",
 			Method:   "GET",
 			Interval: (1 * time.Second).String(),
 			Timeout:  (10 * time.Second).String(),
