@@ -1,5 +1,5 @@
 Name : "consul"
 Addr : "localhost"
-Port : "8900"
+Port : "8500"
 PassWd : ""
 
