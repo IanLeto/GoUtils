@@ -19,19 +19,7 @@ type BaseService struct {
 	ConsulAgent *api.Agent
 }
 
-func NewBaseService() *BaseService {
-	s := &BaseService{
-		Name: "tes2t",
-		TTL:  time.Second * 20,
-		RedisClient: redis.NewUniversalClient(&redis.UniversalOptions{
-			Addrs: []string{"localhost:16379"},
-		}),
-		ConsulAgent: NewConsulClient(nil).Agent(),
-	}
 
-	return s
-	//s.Check()
-}
 
 func (s *BaseService) Check() {
 	_, err := s.RedisClient.Ping().Result()

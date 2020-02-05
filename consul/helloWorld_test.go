@@ -21,3 +21,4 @@ func (s *TestConsulSuite) TestConnect() {
 func TestSuite(t *testing.T) {
 	suite.Run(t, new(TestConsulSuite))
 }
+

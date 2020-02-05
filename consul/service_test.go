@@ -18,22 +18,8 @@ func (s *TestServiceSuit) SetupTest() {
 	s.HTTPOpt = &utils.HttpServiceOption{
 		Addr: "localhost", Port: "9094",
 	}
-	//s.Service = &BaseService{
-	//	Name: "test",
-	//	TTL:  20 * time.Second,
-	//	Cli: goredis.NewClient(&goredis.Options{
-	//		Addr: "localhost:16379",
-	//	}),
-	//}
-	s.Service = NewBaseService()
-	//	s.Service.RegisterServer()
-	//	http.HandleFunc("/member", s.Service.ServerHTTP)
-	//	http.ListenAndServe(":9999", nil)
 }
 func (s *TestServiceSuit) TestBaseService_Check() {
-	//go utils.NewHttpServer(s.HTTPOpt)
-	//p, err := strconv.Atoi(s.HTTPOpt.Port)
-	//s.NoError(err)
 	s.NoError(s.Service.ConsulAgent.ServiceRegister(&api.AgentServiceRegistration{
 		ID:      "test",
 		Name:    "11111",
@@ -48,8 +34,6 @@ func (s *TestServiceSuit) TestBaseService_Check() {
 		},
 	}))
 	utils.RunHttpService()
-	//time.Sleep(100 * time.Second)
-
 }
 func TestServiceSuite(t *testing.T) {
 	suite.Run(t, new(TestServiceSuit))
