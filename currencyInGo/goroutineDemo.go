@@ -35,4 +35,5 @@ func DoWorkWithNoLeak(strChan chan string, done chan interface{}) chan interface
 			}
 		}
 	}()
+	return completed
 }
