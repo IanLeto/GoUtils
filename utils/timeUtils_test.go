@@ -26,30 +26,69 @@ func (s *TesttimeUtils_testSuite) TestFunc() {
 }
 
 func (s *TesttimeUtils_testSuite) SetupTest() {
-	s.timeDemo = time.Now()
+	//s.timeDemo = time.Now()
+	//logger := logging.GetStdLogger()
+	//
+	//// int64 to timestamp
+	//logger.Info("golang 没有所谓的time.timestamp类型，int 就是时间戳，这里与python不同")
+	//var sec int64 = 1582701190
+	//var msec int64 = 1582701190946
+	//var nsec int64 = 1582701190946414000
+	//// timestamp to time
+	//tsec := time.Unix(sec, 0)
+	//tmsec := time.Unix(0, msec*int64(time.Millisecond))
+	//tnsec := time.Unix(0, nsec)
+	//
+	//// time to timestamp
+	//s.Equal(sec, tsec.Unix())
+	//s.Equal(msec, tmsec.UnixNano()/1e6)
+	//s.Equal(nsec, tnsec.UnixNano())
+	//
+	//// sec timestamp to msec timestamp
+	//logger.Info(sec * int64(time.Millisecond))
+	//logger.Info(sec * int64(time.Nanosecond))
+	//xx := time.Duration(sec)
+	//fmt.Println("cx", xx)
+	//
+	//// time to 标准时间格式
+	//logger.Info(tsec.Format(time.RFC3339))
+	//logger.Info(tnsec.Format(time.RFC3339Nano))
+	//// 解析字符串时间
+	//hours, _ := time.ParseDuration("10h")
+	//complex, _ := time.ParseDuration("1h10m10s")
+	//logger.Infof("10h => %v", hours)
+	//logger.Infof("second: %v", complex.Seconds())
+	//
+	//logger.Info("-----------")
+	//a := time.Unix(1583311518000000000, 0)
+	//b := time.Unix(0, 1583311518000000000)
+	//
+	//logger.Infof("%v", a.UnixNano())
+	//logger.Infof("%v", a.Unix())
+	//
+	//logger.Infof("%v", b.UnixNano())
+	//logger.Infof("%v", b.UnixNano())
+	//
+	//c := time.Unix(0, 1582701190)
+	//logger.Info(c.Unix())
+	//logger.Info(c.UnixNano())
+	rr(1582701190)
+	//rr(1583311518000000000)
+	//
+	//logger.Info(time.Now().UnixNano())
+	//logger.Info(time.Unix(0,1583982851473426).Format(time.RFC3339Nano))
+	//logger.Info(time.Unix(0,1583983973246439000).Format(time.RFC3339Nano))
+	//logger.Info(time.Unix(0,1583983973246439).Format(time.RFC3339))
+}
+
+func rr(n int64) () {
 	logger := logging.GetStdLogger()
+	logger.Infof("xc: %v", time.Unix(n, 0).Unix())
+	logger.Infof("xc: %v", time.Unix(n, 0).UnixNano())
 
-	// int64 to timestamp
-	logger.Info("golang 没有所谓的time.timestamp类型，int 就是时间戳，这里与python不同")
-	var sec int64 = 1582701190
-	var msec int64 = 1582701190946
-	var nsec int64 = 1582701190946414000
-	// timestamp to time
-	tsec := time.Unix(sec, 0)
-	tmsec := time.Unix(0, msec*int64(time.Millisecond))
-	tnsec := time.Unix(0, nsec)
+	logger.Infof("xc: %v", time.Unix(0, n).Unix())
 
-	// time to timestamp
-	s.Equal(sec, tsec.Unix())
-	s.Equal(msec, tmsec.UnixNano()/1e6)
-	s.Equal(nsec, tnsec.UnixNano())
-
-	// sec timestamp to msec timestamp
-	logger.Info(sec * int64(time.Millisecond))
-
-	// time to 标准时间格式
-	logger.Info(tsec.Format(time.RFC3339))
-	logger.Info(tnsec.Format(time.RFC3339Nano))
+	logger.Infof("xc:d %v", time.Unix(0, n).UnixNano())
 
 }
 

@@ -14,4 +14,6 @@ func ReceiveDemo() {
 	if err != nil {
 		panic(err)
 	}
+
+	err := GlobalEvent.SubscribeAsync("hh", func() {},false)
 }

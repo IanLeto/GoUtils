@@ -1,0 +1,11 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("system panic: runtime error: invalid memory address or nil pointer dereference\ntransfer/utils.RecoverError\n\t/workDir/Go/goPath/src/transfer/utils/errors.go:37\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:522\nruntime.panicmem\n\t/usr/local/go/src/runtime/panic.go:82\nruntime.sigpanic\n\t/usr/local/go/src/runtime/signal_unix.go:390\ntransfer/scheduler.(*CCHostUpdater).UpdateTo.func1\n\t/workDir/Go/goPath/src/transfer/scheduler/cache.go:106\ntransfer/esb.(*CCApiClient).VisitAllHosts\n\t/workDir/Go/goPath/src/transfer/esb/cc.go:240\ntransfer/scheduler.(*CCHostUpdater).UpdateTo\n\t/workDir/Go/goPath/src/transfer/scheduler/cache.go:96\ntransfer/scheduler.NewCCHostUpdateTask.func4\n\t/workDir/Go/goPath/src/transfer/scheduler/cache.go:201\ntransfer/define.(*PeriodTask).Start\n\t/workDir/Go/goPath/src/transfer/define/task.go:148\ntransfer/define.(*TaskManager).Start.func1\n\t/workDir/Go/goPath/src/transfer/define/task.go:48\ntransfer/define.(*TaskManager).ForEach\n\t/workDir/Go/goPath/src/transfer/define/task.go:23\ntransfer/define.(*TaskManager).Start\n\t/workDir/Go/goPath/src/transfer/define/task.go:47\ntransfer/scheduler.(*Scheduler).Start\n\t/workDir/Go/goPath/src/transfer/scheduler/scheduler.go:222\ntransfer/cmd.glob..func14\n\t/workDir/Go/goPath/src/transfer/cmd/transfer.go:125\ntransfer/vendor/github.com/spf13/cobra.(*Command).execute\n\t/workDir/Go/goPath/src/transfer/vendor/github.com/spf13/cobra/command.go:766\ntransfer/vendor/github.com/spf13/cobra.(*Command).ExecuteC\n\t/workDir/Go/goPath/src/transfer/vendor/github.com/spf13/cobra/command.go:852\ntransfer/vendor/github.com/spf13/cobra.(*Command).Execute\n\t/workDir/Go/goPath/src/transfer/vendor/github.com/spf13/cobra/command.go:800\ntransfer/cmd.Execute\n\t/workDir/Go/goPath/src/transfer/cmd/root.go:54\nmain.main\n\t/workDir/Go/goPath/src/transfer/main.go:127\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:200\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_amd64.s:1337")
+}
+
+func xxxx()  {
+
+}

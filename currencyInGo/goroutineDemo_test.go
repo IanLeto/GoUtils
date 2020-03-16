@@ -2,12 +2,14 @@ package currencyInGo
 
 import (
 	"github.com/stretchr/testify/suite"
+	"net/http"
 	"testing"
 	"time"
 )
 
 type TestgoroutineDemo_testSuite struct {
 	suite.Suite
+	server http.Server
 }
 
 func (s *TestgoroutineDemo_testSuite) TestFunc() {
