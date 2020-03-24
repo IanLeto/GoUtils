@@ -29,3 +29,19 @@ func init() {
 	http.Handle("/metrics", promhttp.Handler())
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
+
+type ClusterManager struct {
+	Zone string
+}
+
+func (c *ClusterManager) ReallyExpensiveAssessmentOfTheSystemState(a map[string]int, b map[string]float64) {
+	return
+}
+
+type ClusterManagerCollector struct {
+	ClusterManager *ClusterManager
+}
+
+var (
+	hostDesc = prometheus.NewDesc("cpu_total", "我是helper", []string{"host"}, nil)
+)
