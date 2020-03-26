@@ -1,0 +1,191 @@
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{   "bk_app_code": "bk_monitorv3",   "bk_app_secret": "0492e72e-288e-4f30-95ab-4194bf833579",   "bk_biz_id": 2,   "bk_username": "admin",   "page": {     "start": 1,     "limit": 1,     "sort": "bk_host_id"   }    }
+
+<> 2020-03-25T052152.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{   "bk_app_code": "bk_monitorv3",   "bk_app_secret": "0492e72e-288e-4f30-95ab-4194bf833579",   "bk_biz_id": 2,   "bk_username": "admin",   "page": {     "start": 0,     "limit": 1,     "sort": "bk_host_id"   }    }
+
+<> 2020-03-25T051548.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{   "bk_app_code": "bk_monitorv3",   "bk_app_secret": "0492e72e-288e-4f30-95ab-4194bf833579",   "bk_biz_id": 2,   "bk_username": "admin",   "page": {     "start": 0,     "limit": 10,     "sort": "bk_host_id"   }    }
+
+<> 2020-03-25T051528.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{   "bk_app_code": "bk_monitorv3",   "bk_app_secret": "0492e72e-288e-4f30-95ab-4194bf833579",   "bk_biz_id": 2,   "bk_username": "admin",   "page": {     "start": 0,     "limit": 10,     "sort": "bk_host_id"   },    }
+
+<> 2020-03-25T051458.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{ "bk_app_code": "bk_monitorv3",bk_username=admin     ,"bk_app_secret": "0492e72e-288e-4f30-95ab-4194bf833579", "bk_biz_id": 2,     "page": {         "start": 0,         "limit": 10,         "sort": "bk_host_id"     } }
+
+<> 2020-03-25T051204.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{ "bk_app_code": "bk_monitorv3",     "bk_app_secret": "0492e72e-288e-4f30-95ab-4194bf833579", "bk_biz_id": 2,     "page": {         "start": 0,         "limit": 10,         "sort": "bk_host_id"     } }
+
+<> 2020-03-25T051118.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+<> 2020-03-25T050932.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+<> 2020-03-25T050552.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{     "bk_app_code": "esb_test",     "bk_app_secret": "xxx",     "bk_token": "xxx",     "bk_supplier_account": "0",     "bk_biz_id": 1,     "page": {         "start": 0,         "limit": 10,         "sort": "bk_host_id"     },     "host_property_filter": {         "condition": "AND",         "rules": [         {             "field": "bk_host_outerip",             "operator": "begins_with",             "value": "127.0"         }, {             "condition": "OR",             "rules": [{                 "field": "bk_os_type",                 "operator": "not_in",                 "value": ["3"]             }, {                 "field": "bk_sla",                 "operator": "equal",                 "value": "1"             }]         }]     } }
+
+<> 2020-03-25T050524.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{   "bk_app_code": "bk_monitorv3",   "bk_app_secret":"0492e72e-288e-4f30-95ab-4194bf833579",   "bk_biz_id":2,"bk_username":"admin","page": {"start": 0,"limit": 10,"sort": "bk_host_id"} }
+
+<> 2020-03-25T050436.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin&page=1
+Accept: application/json
+
+{   "bk_app_code": "bk_monitorv3",   "bk_app_secret":"0492e72e-288e-4f30-95ab-4194bf833579",   "bk_biz_id":2,"bk_username":"admin",       "page": {         "start": 0,         "limit": 10,         "sort": "bk_host_id"     } }
+
+<> 2020-03-25T050316.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin&page={"start": 0}
+Accept: application/json
+
+{   "bk_app_code": "bk_monitorv3",   "bk_app_secret":"0492e72e-288e-4f30-95ab-4194bf833579",   "bk_biz_id":2,"bk_username":"admin",       "page": {         "start": 0,         "limit": 10,         "sort": "bk_host_id"     } }
+
+<> 2020-03-25T050305.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin&page={"start": 0,         "limit": 10,         "sort": "bk_host_id"}
+Accept: application/json
+
+{   "bk_app_code": "bk_monitorv3",   "bk_app_secret":"0492e72e-288e-4f30-95ab-4194bf833579",   "bk_biz_id":2,"bk_username":"admin",       "page": {         "start": 0,         "limit": 10,         "sort": "bk_host_id"     } }
+
+<> 2020-03-25T050115.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{   "bk_app_code": "bk_monitorv3",   "bk_app_secret":"0492e72e-288e-4f30-95ab-4194bf833579",   "bk_biz_id":2,"bk_username":"admin",       "page": {         "start": 0,         "limit": 10,         "sort": "bk_host_id"     } }
+
+<> 2020-03-25T045928.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{
+  "bk_app_code": "bk_monitorv3",
+  "bk_app_secret":"0492e72e-288e-4f30-95ab-4194bf833579",
+  "bk_biz_id":2,"bk_username":"admin",
+      "page": {
+        "start": 0,
+        "limit": 10,
+        "sort": "bk_host_id"
+    }
+}
+
+<> 2020-03-15T043124.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{
+  "bk_app_code": "bk_monitorv3",
+  "bk_app_secret":"0492e72e-288e-4f30-95ab-4194bf833579",
+  "bk_biz_id":2,"bk_username":"admin",
+      "page": {
+        "start": 0,
+        "limit": 10,
+        "sort": "bk_host_id"
+    }
+}
+
+<> 2020-03-13T055514.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{
+  "bk_app_code": "bk_monitorv3",
+  "bk_app_secret":"0492e72e-288e-4f30-95ab-4194bf833579",
+  "bk_biz_id":2,"bk_username":"admin",
+      "page": {
+        "start": 0,
+        "limit": 10,
+        "sort": "bk_host_id"
+    }
+}
+
+<> 2020-03-13T055458.200.json
+
+###
+
+POST https://paasee-dev.bktencent.com/api/c/compapi/v2/cc/list_biz_hosts_topo/?bk_app_code=bk_monitorv3&bk_app_secret=0492e72e-288e-4f30-95ab-4194bf833579&bk_biz_id=2&bk_username=admin
+Accept: application/json
+
+{
+  "bk_app_code": "bk_monitorv3",
+  "bk_app_secret":"0492e72e-288e-4f30-95ab-4194bf833579",
+  "bk_biz_id":2,"bk_username":"admin",
+      "page": {
+        "start": 0,
+        "limit": 10,
+        "sort": "bk_host_id"
+    },
+}
+
+###

@@ -1,0 +1,7 @@
+{
+  "message": "Signature [bk_signature] and APP Secret [bk_app_secret] cannot be empty at the same time",
+  "code": 1306000,
+  "data": null,
+  "result": false,
+  "request_id": "31834e50633e40a8aea0744e2f06d3a4"
+}

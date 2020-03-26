@@ -1,0 +1,119 @@
+{
+  "code": 0,
+  "permission": null,
+  "result": true,
+  "request_id": "65e78c592d5f4cccb85fe13db850da74",
+  "message": "success",
+  "data": {
+    "count": 13,
+    "info": [
+      {
+        "topo": [
+          {
+            "bk_set_id": 5,
+            "module": [
+              {
+                "bk_module_name": "consul",
+                "bk_module_id": 21
+              },
+              {
+                "bk_module_name": "redis_cluster",
+                "bk_module_id": 9
+              },
+              {
+                "bk_module_name": "mongodb",
+                "bk_module_id": 17
+              },
+              {
+                "bk_module_name": "zookeeper",
+                "bk_module_id": 13
+              },
+              {
+                "bk_module_name": "kafka",
+                "bk_module_id": 19
+              },
+              {
+                "bk_module_name": "beanstalk",
+                "bk_module_id": 16
+              },
+              {
+                "bk_module_name": "influxdb",
+                "bk_module_id": 10
+              },
+              {
+                "bk_module_name": "redis",
+                "bk_module_id": 12
+              }
+            ],
+            "bk_set_name": "公共组件"
+          },
+          {
+            "bk_set_id": 6,
+            "module": [
+              {
+                "bk_module_name": "appengine",
+                "bk_module_id": 28
+              }
+            ],
+            "bk_set_name": "PaaS平台"
+          },
+          {
+            "bk_set_id": 3,
+            "module": [
+              {
+                "bk_module_name": "fta",
+                "bk_module_id": 5
+              }
+            ],
+            "bk_set_name": "故障自愈"
+          },
+          {
+            "bk_set_id": 7,
+            "module": [
+              {
+                "bk_module_name": "job",
+                "bk_module_id": 29
+              }
+            ],
+            "bk_set_name": "作业平台"
+          }
+        ],
+        "host": {
+          "bk_cpu": 8,
+          "bk_isp_name": "2",
+          "bk_os_name": "linux centos",
+          "bk_province_name": "440000",
+          "bk_host_id": 2,
+          "import_from": "2",
+          "bk_os_version": "7.7.1908",
+          "bk_disk": 245,
+          "operator": "admin",
+          "docker_server_version": "1.12.4",
+          "create_time": "2019-05-17T12:40:33.671+08:00",
+          "bk_mem": 32012,
+          "bk_host_name": "VM_1_11_centos",
+          "last_time": "2020-03-18T19:29:10.519+08:00",
+          "bk_host_innerip": "10.0.1.11",
+          "bk_comment": "",
+          "docker_client_version": "1.12.4",
+          "bk_os_bit": "64-bit",
+          "bk_outer_mac": "",
+          "bk_asset_id": "",
+          "bk_service_term": null,
+          "bk_cloud_id": 0,
+          "bk_sla": null,
+          "bk_cpu_mhz": 1996,
+          "bk_host_outerip": "",
+          "bk_state_name": "CN",
+          "bk_os_type": "1",
+          "bk_supplier_account": "0",
+          "bk_mac": "52:54:00:f8:42:96",
+          "bk_bak_operator": "admin",
+          "bk_state": "运营中[无告警]",
+          "bk_sn": "",
+          "bk_cpu_module": "AMD EPYC Processor"
+        }
+      }
+    ]
+  }
+}

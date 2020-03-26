@@ -1,0 +1,838 @@
+{
+  "code": 0,
+  "permission": null,
+  "result": true,
+  "request_id": "55eaf9af348b49b3a692b1fe866658ed",
+  "message": "success",
+  "data": {
+    "count": 13,
+    "info": [
+      {
+        "topo": [
+          {
+            "bk_set_id": 5,
+            "module": [
+              {
+                "bk_module_name": "consul",
+                "bk_module_id": 21
+              },
+              {
+                "bk_module_name": "mysql",
+                "bk_module_id": 18
+              },
+              {
+                "bk_module_name": "redis",
+                "bk_module_id": 12
+              },
+              {
+                "bk_module_name": "nginx",
+                "bk_module_id": 15
+              },
+              {
+                "bk_module_name": "redis_cluster",
+                "bk_module_id": 9
+              },
+              {
+                "bk_module_name": "mongodb",
+                "bk_module_id": 17
+              },
+              {
+                "bk_module_name": "zookeeper",
+                "bk_module_id": 13
+              },
+              {
+                "bk_module_name": "elasticsearch",
+                "bk_module_id": 14
+              },
+              {
+                "bk_module_name": "kafka",
+                "bk_module_id": 19
+              },
+              {
+                "bk_module_name": "ceph-radosgw",
+                "bk_module_id": 61
+              }
+            ],
+            "bk_set_name": "公共组件"
+          },
+          {
+            "bk_set_id": 9,
+            "module": [
+              {
+                "bk_module_name": "license",
+                "bk_module_id": 48
+              },
+              {
+                "bk_module_name": "gse_api",
+                "bk_module_id": 42
+              },
+              {
+                "bk_module_name": "gse_task",
+                "bk_module_id": 50
+              },
+              {
+                "bk_module_name": "gse_btsvr",
+                "bk_module_id": 45
+              },
+              {
+                "bk_module_name": "gse_data",
+                "bk_module_id": 49
+              },
+              {
+                "bk_module_name": "gse_dba",
+                "bk_module_id": 43
+              },
+              {
+                "bk_module_name": "gse_ops",
+                "bk_module_id": 46
+              },
+              {
+                "bk_module_name": "gse_opts",
+                "bk_module_id": 52
+              },
+              {
+                "bk_module_name": "gse_alarm",
+                "bk_module_id": 47
+              },
+              {
+                "bk_module_name": "gse_syncdata",
+                "bk_module_id": 57
+              },
+              {
+                "bk_module_name": "gse_procmgr",
+                "bk_module_id": 55
+              },
+              {
+                "bk_module_name": "gse_dataop",
+                "bk_module_id": 56
+              }
+            ],
+            "bk_set_name": "管控平台"
+          },
+          {
+            "bk_set_id": 6,
+            "module": [
+              {
+                "bk_module_name": "appo",
+                "bk_module_id": 23
+              },
+              {
+                "bk_module_name": "esb",
+                "bk_module_id": 25
+              },
+              {
+                "bk_module_name": "appengine",
+                "bk_module_id": 28
+              },
+              {
+                "bk_module_name": "login",
+                "bk_module_id": 26
+              },
+              {
+                "bk_module_name": "console",
+                "bk_module_id": 22
+              }
+            ],
+            "bk_set_name": "PaaS平台"
+          },
+          {
+            "bk_set_id": 7,
+            "module": [
+              {
+                "bk_module_name": "job",
+                "bk_module_id": 29
+              }
+            ],
+            "bk_set_name": "作业平台"
+          },
+          {
+            "bk_set_id": 4,
+            "module": [
+              {
+                "bk_module_name": "dataapi",
+                "bk_module_id": 6
+              }
+            ],
+            "bk_set_name": "数据服务模块"
+          }
+        ],
+        "host": {
+          "bk_cpu": 8,
+          "bk_isp_name": "1",
+          "bk_os_name": "linux centos",
+          "bk_province_name": "440000",
+          "bk_host_id": 1,
+          "import_from": "2",
+          "bk_os_version": "7.4.1708",
+          "bk_disk": 344,
+          "operator": "",
+          "docker_server_version": "",
+          "create_time": "2019-05-17T12:40:29.212+08:00",
+          "bk_mem": 32012,
+          "bk_host_name": "VM_1_10_centos",
+          "last_time": "2019-10-30T17:02:27.338+08:00",
+          "bk_host_innerip": "10.0.1.10",
+          "bk_comment": "",
+          "docker_client_version": "",
+          "bk_os_bit": "64-bit",
+          "bk_outer_mac": "",
+          "bk_asset_id": "",
+          "bk_service_term": null,
+          "bk_cloud_id": 0,
+          "bk_sla": null,
+          "bk_cpu_mhz": 2499,
+          "bk_host_outerip": "",
+          "bk_state_name": "CN",
+          "bk_os_type": "1",
+          "bk_mac": "52:54:00:0a:ac:26",
+          "bk_bak_operator": "",
+          "bk_supplier_account": "0",
+          "bk_sn": "",
+          "bk_cpu_module": "Intel(R) Xeon(R) Gold 61xx CPU"
+        }
+      },
+      {
+        "topo": [
+          {
+            "bk_set_id": 6,
+            "module": [
+              {
+                "bk_module_name": "appengine",
+                "bk_module_id": 28
+              }
+            ],
+            "bk_set_name": "PaaS平台"
+          },
+          {
+            "bk_set_id": 3,
+            "module": [
+              {
+                "bk_module_name": "fta",
+                "bk_module_id": 5
+              }
+            ],
+            "bk_set_name": "故障自愈"
+          },
+          {
+            "bk_set_id": 7,
+            "module": [
+              {
+                "bk_module_name": "job",
+                "bk_module_id": 29
+              }
+            ],
+            "bk_set_name": "作业平台"
+          },
+          {
+            "bk_set_id": 5,
+            "module": [
+              {
+                "bk_module_name": "consul",
+                "bk_module_id": 21
+              },
+              {
+                "bk_module_name": "redis_cluster",
+                "bk_module_id": 9
+              },
+              {
+                "bk_module_name": "mongodb",
+                "bk_module_id": 17
+              },
+              {
+                "bk_module_name": "zookeeper",
+                "bk_module_id": 13
+              },
+              {
+                "bk_module_name": "kafka",
+                "bk_module_id": 19
+              },
+              {
+                "bk_module_name": "beanstalk",
+                "bk_module_id": 16
+              },
+              {
+                "bk_module_name": "influxdb",
+                "bk_module_id": 10
+              },
+              {
+                "bk_module_name": "redis",
+                "bk_module_id": 12
+              }
+            ],
+            "bk_set_name": "公共组件"
+          }
+        ],
+        "host": {
+          "bk_cpu": 8,
+          "bk_isp_name": "2",
+          "bk_os_name": "linux centos",
+          "bk_province_name": "440000",
+          "bk_host_id": 2,
+          "import_from": "2",
+          "bk_os_version": "7.7.1908",
+          "bk_disk": 245,
+          "operator": "admin",
+          "docker_server_version": "1.12.4",
+          "create_time": "2019-05-17T12:40:33.671+08:00",
+          "bk_mem": 32012,
+          "bk_host_name": "VM_1_11_centos",
+          "last_time": "2020-03-18T19:29:10.519+08:00",
+          "bk_host_innerip": "10.0.1.11",
+          "bk_comment": "",
+          "docker_client_version": "1.12.4",
+          "bk_os_bit": "64-bit",
+          "bk_outer_mac": "",
+          "bk_asset_id": "",
+          "bk_service_term": null,
+          "bk_cloud_id": 0,
+          "bk_sla": null,
+          "bk_cpu_mhz": 1996,
+          "bk_host_outerip": "",
+          "bk_state_name": "CN",
+          "bk_os_type": "1",
+          "bk_supplier_account": "0",
+          "bk_mac": "52:54:00:f8:42:96",
+          "bk_bak_operator": "admin",
+          "bk_state": "运营中[无告警]",
+          "bk_sn": "",
+          "bk_cpu_module": "AMD EPYC Processor"
+        }
+      },
+      {
+        "topo": [
+          {
+            "bk_set_id": 5,
+            "module": [
+              {
+                "bk_module_name": "consul",
+                "bk_module_id": 21
+              },
+              {
+                "bk_module_name": "redis_cluster",
+                "bk_module_id": 9
+              },
+              {
+                "bk_module_name": "mongodb",
+                "bk_module_id": 17
+              },
+              {
+                "bk_module_name": "zookeeper",
+                "bk_module_id": 13
+              },
+              {
+                "bk_module_name": "rabbitmq",
+                "bk_module_id": 20
+              },
+              {
+                "bk_module_name": "kafka",
+                "bk_module_id": 19
+              },
+              {
+                "bk_module_name": "influxdb",
+                "bk_module_id": 10
+              },
+              {
+                "bk_module_name": "elasticsearch",
+                "bk_module_id": 14
+              }
+            ],
+            "bk_set_name": "公共组件"
+          },
+          {
+            "bk_set_id": 8,
+            "module": [
+              {
+                "bk_module_name": "adminserver",
+                "bk_module_id": 33
+              },
+              {
+                "bk_module_name": "apiserver",
+                "bk_module_id": 34
+              },
+              {
+                "bk_module_name": "auditcontroller",
+                "bk_module_id": 38
+              },
+              {
+                "bk_module_name": "datacollection",
+                "bk_module_id": 35
+              },
+              {
+                "bk_module_name": "eventserver",
+                "bk_module_id": 36
+              },
+              {
+                "bk_module_name": "hostcontroller",
+                "bk_module_id": 39
+              },
+              {
+                "bk_module_name": "hostserver",
+                "bk_module_id": 30
+              },
+              {
+                "bk_module_name": "objectcontroller",
+                "bk_module_id": 31
+              },
+              {
+                "bk_module_name": "proccontroller",
+                "bk_module_id": 32
+              },
+              {
+                "bk_module_name": "procserver",
+                "bk_module_id": 40
+              },
+              {
+                "bk_module_name": "toposerver",
+                "bk_module_id": 41
+              },
+              {
+                "bk_module_name": "webserver",
+                "bk_module_id": 37
+              }
+            ],
+            "bk_set_name": "配置平台"
+          },
+          {
+            "bk_set_id": 3,
+            "module": [
+              {
+                "bk_module_name": "fta",
+                "bk_module_id": 5
+              },
+              {
+                "bk_module_name": "fta",
+                "bk_module_id": 5
+              }
+            ],
+            "bk_set_name": "故障自愈"
+          },
+          {
+            "bk_set_id": 7,
+            "module": [
+              {
+                "bk_module_name": "job",
+                "bk_module_id": 29
+              }
+            ],
+            "bk_set_name": "作业平台"
+          }
+        ],
+        "host": {
+          "bk_cpu": 8,
+          "bk_isp_name": "3",
+          "bk_os_name": "linux centos",
+          "bk_province_name": "440000",
+          "bk_host_id": 3,
+          "import_from": "2",
+          "bk_os_version": "7.4.1708",
+          "bk_disk": 639,
+          "operator": "",
+          "docker_server_version": "1.12.4",
+          "create_time": "2019-05-17T12:40:37.473+08:00",
+          "bk_mem": 32012,
+          "bk_host_name": "rbtnode1",
+          "last_time": "2019-10-30T17:05:17.817+08:00",
+          "bk_host_innerip": "10.0.1.16",
+          "bk_comment": "",
+          "docker_client_version": "1.12.4",
+          "bk_os_bit": "64-bit",
+          "bk_outer_mac": "",
+          "bk_asset_id": "",
+          "bk_service_term": null,
+          "bk_cloud_id": 0,
+          "bk_sla": null,
+          "bk_cpu_mhz": 1996,
+          "bk_host_outerip": "",
+          "bk_state_name": "CN",
+          "bk_os_type": "1",
+          "bk_mac": "52:54:00:f2:b3:a6",
+          "bk_bak_operator": "",
+          "bk_supplier_account": "0",
+          "bk_sn": "",
+          "bk_cpu_module": "AMD EPYC Processor"
+        }
+      },
+      {
+        "topo": [
+          {
+            "bk_set_id": 4,
+            "module": [
+              {
+                "bk_module_name": "dataapi",
+                "bk_module_id": 6
+              }
+            ],
+            "bk_set_name": "数据服务模块"
+          },
+          {
+            "bk_set_id": 7,
+            "module": [
+              {
+                "bk_module_name": "job",
+                "bk_module_id": 29
+              }
+            ],
+            "bk_set_name": "作业平台"
+          }
+        ],
+        "host": {
+          "bk_cpu": 2,
+          "bk_isp_name": null,
+          "bk_os_name": "Windows Server 2012 R2 Datacenter",
+          "bk_province_name": null,
+          "bk_host_id": 4,
+          "import_from": "3",
+          "bk_os_version": "6.3.9600 Build 9600",
+          "bk_disk": 49,
+          "operator": null,
+          "docker_server_version": "",
+          "create_time": "2019-06-05T11:06:46.265+08:00",
+          "bk_mem": 2047,
+          "bk_host_name": "10_53_69_113",
+          "last_time": "2020-03-25T17:01:10.388+08:00",
+          "bk_host_innerip": "10.0.1.9",
+          "bk_comment": "",
+          "docker_client_version": "",
+          "bk_os_bit": "64 位",
+          "bk_outer_mac": "",
+          "bk_asset_id": "",
+          "bk_service_term": null,
+          "bk_cloud_id": 0,
+          "bk_sla": null,
+          "bk_cpu_mhz": 2394,
+          "bk_host_outerip": "",
+          "bk_state_name": null,
+          "bk_os_type": "2",
+          "bk_mac": "52:54:00:fa:fb:1c",
+          "bk_bak_operator": null,
+          "bk_supplier_account": "0",
+          "bk_sn": "",
+          "bk_cpu_module": "Intel(R) Xeon(R) CPU E5-26xx v4"
+        }
+      },
+      {
+        "topo": [
+          {
+            "bk_set_id": 5,
+            "module": [
+              {
+                "bk_module_name": "consul",
+                "bk_module_id": 21
+              },
+              {
+                "bk_module_name": "elasticsearch",
+                "bk_module_id": 14
+              },
+              {
+                "bk_module_name": "etcd",
+                "bk_module_id": 11
+              },
+              {
+                "bk_module_name": "kafka",
+                "bk_module_id": 19
+              }
+            ],
+            "bk_set_name": "公共组件"
+          }
+        ],
+        "host": {
+          "bk_cpu": 4,
+          "bk_isp_name": null,
+          "bk_os_name": "linux centos",
+          "bk_province_name": null,
+          "bk_host_id": 1022,
+          "import_from": "2",
+          "bk_os_version": "7.5.1804",
+          "bk_disk": 344,
+          "operator": null,
+          "docker_server_version": "",
+          "create_time": "2019-08-02T12:35:31.025+08:00",
+          "bk_mem": 15885,
+          "bk_host_name": "VM_1_8_centos",
+          "last_time": "2020-02-24T22:57:07.416+08:00",
+          "bk_host_innerip": "10.0.1.8",
+          "bk_comment": "",
+          "docker_client_version": "",
+          "bk_os_bit": "64-bit",
+          "bk_outer_mac": "",
+          "bk_asset_id": "",
+          "bk_service_term": null,
+          "bk_cloud_id": 0,
+          "bk_sla": null,
+          "bk_cpu_mhz": 1996,
+          "bk_host_outerip": "",
+          "bk_state_name": null,
+          "bk_os_type": "1",
+          "bk_supplier_account": "0",
+          "bk_mac": "52:54:00:69:7d:2c",
+          "bk_bak_operator": null,
+          "bk_state": "运营中[无告警]",
+          "bk_sn": "",
+          "bk_cpu_module": "AMD EPYC Processor"
+        }
+      },
+      {
+        "topo": [
+          {
+            "bk_set_id": 5,
+            "module": [
+              {
+                "bk_module_name": "consul",
+                "bk_module_id": 21
+              },
+              {
+                "bk_module_name": "redis_cluster",
+                "bk_module_id": 9
+              },
+              {
+                "bk_module_name": "influxdb",
+                "bk_module_id": 10
+              }
+            ],
+            "bk_set_name": "公共组件"
+          }
+        ],
+        "host": {
+          "bk_cpu": 4,
+          "bk_isp_name": null,
+          "bk_os_name": "linux centos",
+          "bk_province_name": null,
+          "bk_host_id": 1023,
+          "import_from": "2",
+          "bk_os_version": "7.5.1804",
+          "bk_disk": 147,
+          "operator": "admin",
+          "docker_server_version": "",
+          "create_time": "2019-08-02T12:35:35.1+08:00",
+          "bk_mem": 15885,
+          "bk_host_name": "VM_1_4_centos",
+          "last_time": "2020-03-19T11:47:15.626+08:00",
+          "bk_host_innerip": "10.0.1.4",
+          "bk_comment": "",
+          "docker_client_version": "",
+          "bk_os_bit": "64-bit",
+          "bk_outer_mac": "",
+          "bk_asset_id": "",
+          "bk_service_term": null,
+          "bk_cloud_id": 0,
+          "bk_sla": null,
+          "bk_cpu_mhz": 1999,
+          "bk_host_outerip": "",
+          "bk_state_name": null,
+          "bk_os_type": "1",
+          "bk_mac": "52:54:00:78:4e:70",
+          "bk_bak_operator": "admin",
+          "bk_supplier_account": "0",
+          "bk_sn": "",
+          "bk_cpu_module": "AMD EPYC Processor"
+        }
+      },
+      {
+        "topo": [
+          {
+            "bk_set_id": 6,
+            "module": [
+              {
+                "bk_module_name": "appengine",
+                "bk_module_id": 28
+              }
+            ],
+            "bk_set_name": "PaaS平台"
+          },
+          {
+            "bk_set_id": 5,
+            "module": [
+              {
+                "bk_module_name": "influxdb",
+                "bk_module_id": 10
+              },
+              {
+                "bk_module_name": "consul",
+                "bk_module_id": 21
+              }
+            ],
+            "bk_set_name": "公共组件"
+          }
+        ],
+        "host": {
+          "bk_cpu": 8,
+          "bk_isp_name": null,
+          "bk_os_name": "linux centos",
+          "bk_province_name": null,
+          "bk_host_id": 1026,
+          "import_from": "3",
+          "bk_os_version": "7.6.1810",
+          "bk_disk": 49,
+          "operator": null,
+          "docker_server_version": "",
+          "create_time": "2019-10-11T20:35:05.96+08:00",
+          "bk_mem": 32011,
+          "bk_host_name": "VM_1_45_centos",
+          "last_time": "2019-10-30T17:02:27.963+08:00",
+          "bk_host_innerip": "10.0.1.45",
+          "bk_comment": "",
+          "docker_client_version": "",
+          "bk_os_bit": "64-bit",
+          "bk_outer_mac": "",
+          "bk_asset_id": "",
+          "bk_service_term": null,
+          "bk_cloud_id": 0,
+          "bk_sla": null,
+          "bk_cpu_mhz": 1999,
+          "bk_host_outerip": "",
+          "bk_state_name": null,
+          "bk_os_type": "1",
+          "bk_mac": "52:54:00:05:d2:ef",
+          "bk_bak_operator": null,
+          "bk_supplier_account": "0",
+          "bk_sn": "",
+          "bk_cpu_module": "AMD EPYC Processor"
+        }
+      },
+      {
+        "topo": [
+          {
+            "bk_set_id": 2,
+            "module": [
+              {
+                "bk_module_name": "idle host",
+                "bk_module_id": 3
+              }
+            ],
+            "bk_set_name": "idle pool"
+          }
+        ],
+        "host": {
+          "bk_cpu": 12,
+          "bk_isp_name": null,
+          "bk_os_name": "linux centos",
+          "bk_province_name": null,
+          "bk_host_id": 1028,
+          "import_from": "3",
+          "bk_os_version": "7.6.1810",
+          "bk_disk": 492,
+          "operator": null,
+          "docker_server_version": "",
+          "create_time": "2019-11-25T10:35:38.553+08:00",
+          "bk_mem": 48137,
+          "bk_host_name": "VM_1_113_centos",
+          "last_time": "2019-11-25T10:35:38.553+08:00",
+          "bk_host_innerip": "10.0.1.113",
+          "bk_comment": "",
+          "docker_client_version": "",
+          "bk_os_bit": "64-bit",
+          "bk_outer_mac": "",
+          "bk_asset_id": "",
+          "bk_service_term": null,
+          "bk_cloud_id": 0,
+          "bk_sla": null,
+          "bk_cpu_mhz": 2394,
+          "bk_host_outerip": "",
+          "bk_state_name": null,
+          "bk_os_type": "1",
+          "bk_mac": "52:54:00:8f:69:7e",
+          "bk_bak_operator": null,
+          "bk_supplier_account": "0",
+          "bk_sn": "",
+          "bk_cpu_module": "Intel(R) Xeon(R) CPU E5-26xx v4"
+        }
+      },
+      {
+        "topo": [
+          {
+            "bk_set_id": 2,
+            "module": [
+              {
+                "bk_module_name": "idle host",
+                "bk_module_id": 3
+              }
+            ],
+            "bk_set_name": "idle pool"
+          }
+        ],
+        "host": {
+          "bk_cpu": 12,
+          "bk_isp_name": null,
+          "bk_os_name": "linux centos",
+          "bk_province_name": null,
+          "bk_host_id": 1029,
+          "import_from": "3",
+          "bk_os_version": "7.6.1810",
+          "bk_disk": 492,
+          "operator": null,
+          "docker_server_version": "",
+          "create_time": "2019-11-25T10:35:39.229+08:00",
+          "bk_mem": 48137,
+          "bk_host_name": "VM_1_62_centos",
+          "last_time": "2019-11-25T10:35:39.229+08:00",
+          "bk_host_innerip": "10.0.1.62",
+          "bk_comment": "",
+          "docker_client_version": "",
+          "bk_os_bit": "64-bit",
+          "bk_outer_mac": "",
+          "bk_asset_id": "",
+          "bk_service_term": null,
+          "bk_cloud_id": 0,
+          "bk_sla": null,
+          "bk_cpu_mhz": 2394,
+          "bk_host_outerip": "",
+          "bk_state_name": null,
+          "bk_os_type": "1",
+          "bk_mac": "52:54:00:72:50:44",
+          "bk_bak_operator": null,
+          "bk_supplier_account": "0",
+          "bk_sn": "",
+          "bk_cpu_module": "Intel(R) Xeon(R) CPU E5-26xx v4"
+        }
+      },
+      {
+        "topo": [
+          {
+            "bk_set_id": 2,
+            "module": [
+              {
+                "bk_module_name": "idle host",
+                "bk_module_id": 3
+              }
+            ],
+            "bk_set_name": "idle pool"
+          }
+        ],
+        "host": {
+          "bk_cpu": 12,
+          "bk_isp_name": null,
+          "bk_os_name": "linux centos",
+          "bk_province_name": null,
+          "bk_host_id": 1030,
+          "import_from": "3",
+          "bk_os_version": "7.6.1810",
+          "bk_disk": 492,
+          "operator": null,
+          "docker_server_version": "",
+          "create_time": "2019-11-25T10:35:39.907+08:00",
+          "bk_mem": 48137,
+          "bk_host_name": "VM_1_122_centos",
+          "last_time": "2019-11-25T10:35:39.907+08:00",
+          "bk_host_innerip": "10.0.1.122",
+          "bk_comment": "",
+          "docker_client_version": "",
+          "bk_os_bit": "64-bit",
+          "bk_outer_mac": "",
+          "bk_asset_id": "",
+          "bk_service_term": null,
+          "bk_cloud_id": 0,
+          "bk_sla": null,
+          "bk_cpu_mhz": 2394,
+          "bk_host_outerip": "",
+          "bk_state_name": null,
+          "bk_os_type": "1",
+          "bk_mac": "52:54:00:73:a1:17",
+          "bk_bak_operator": null,
+          "bk_supplier_account": "0",
+          "bk_sn": "",
+          "bk_cpu_module": "Intel(R) Xeon(R) CPU E5-26xx v4"
+        }
+      }
+    ]
+  }
+}

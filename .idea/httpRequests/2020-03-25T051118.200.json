@@ -1,0 +1,7 @@
+{
+  "message": "User authentication failed, please provide a valid user identity, such as bk_token, bk_username",
+  "code": 1306000,
+  "data": null,
+  "result": false,
+  "request_id": "4b734f2f05c0422e8e4e796307928bd2"
+}

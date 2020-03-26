@@ -1,0 +1,7 @@
+{
+  "message": "Invalid APP Code [bk_app_code=esb_test], please confirm if the APP Code has been registered",
+  "code": 1306000,
+  "data": null,
+  "result": false,
+  "request_id": "cb17838bff444569abbb7dcc1a590894"
+}
