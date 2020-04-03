@@ -100,7 +100,7 @@ func (m *TaskManager) Start() error {
 			}
 		}
 	}()
-
+	return nil
 }
 
 func (m *TaskManager) init() {

@@ -1,7 +1,0 @@
-{
-  "message": "Request JSON string is wrong in format, which cannot be analyzed.",
-  "code": 1306000,
-  "data": null,
-  "result": false,
-  "request_id": "b7b0ebc905b4441eaa9ff0a730aedff0"
-}
