@@ -2,7 +2,9 @@ package currencyInGo
 
 import (
 	"github.com/stretchr/testify/suite"
+	"sync"
 	"testing"
+	"transfer/logging"
 )
 
 type TestlockDemo_testSuite struct {
@@ -25,6 +27,17 @@ func (s *TestlockDemo_testSuite) TestDemoLock() {
 }
 
 func (s *TestlockDemo_testSuite) SetupTest() {
+	var x sync.Once
+
+	for _, value := range []int{1, 2, 3, 45, 12} {
+		logging.GetStdLogger().Info("xx", value)
+		if value == 3 {
+			x.Do(func() {
+				logging.GetStdLogger().Warn("xcxccx", value)
+			})
+		}
+
+	}
 
 }
 

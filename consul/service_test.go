@@ -35,13 +35,13 @@ func (s *TestServiceSuit) TestBaseService_Check() {
 	//p, err := strconv.Atoi(s.HTTPOpt.Port)
 	//s.NoError(err)
 	s.NoError(s.Service.ConsulAgent.ServiceRegister(&api.AgentServiceRegistration{
-		ID:      "test",
-		Name:    "11111",
+		ID:      "test2",
+		Name:    "httpServer",
 		Port:    80,
-		Address: "172.17.0.4",
+		Address: "172.17.0.3",
 		Tags:    []string{"12"},
 		Check: &api.AgentServiceCheck{
-			HTTP:     "http://172.17.0.4:80",
+			HTTP:     "http://172.17.0.3:80",
 			Method:   "GET",
 			Interval: (1 * time.Second).String(),
 			Timeout:  (10 * time.Second).String(),
@@ -49,8 +49,12 @@ func (s *TestServiceSuit) TestBaseService_Check() {
 	}))
 	utils.RunHttpService()
 	//time.Sleep(100 * time.Second)
+}
+
+func (s *TestServiceSuit)TestBaseServiceHealth()  {
 
 }
+
 func TestServiceSuite(t *testing.T) {
 	suite.Run(t, new(TestServiceSuit))
 }

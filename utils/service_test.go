@@ -24,6 +24,7 @@ func (s *TestServiceSuit) TestNewHttpService() {
 	s.Exactly("200 OK", resp.Status)
 }
 
+
 func TestServiceSuite(t *testing.T) {
 	suite.Run(t, new(TestServiceSuit))
 }

@@ -1,11 +1,9 @@
 package main
 
 import (
-	"GoUtils/utils"
-	"github.com/hashicorp/consul/api"
+	"fmt"
 	_ "goUtils/eventBusDemo"
 	"os"
-	"time"
 )
 
 func main() {
@@ -39,24 +37,29 @@ func main() {
 	//if err != nil {
 	//	panic(err)
 	//}
-	config := api.DefaultConfig()
-	config.Address = "localhost:18500"
-	client, err := api.NewClient(config)
-	utils.NoErr(err)
+	//config := api.DefaultConfig()
+	//config.Address = "localhost:18500"
+	//client, err := api.NewClient(config)
+	//utils.NoErr(err)
+	//
+	//utils.NoErr(
+	//	client.Agent().ServiceRegister(&api.AgentServiceRegistration{
+	//		ID:      "htt",
+	//		Name:    "http-server2",
+	//		Address: "localhost",
+	//		Port:    8080,
+	//		Meta:    map[string]string{"ke": "v"},
+	//		Check: &api.AgentServiceCheck{
+	//			HTTP:     "localhost:8080",
+	//			Method:   "GET",
+	//			Interval: (1 * time.Second).String(),
+	//		},
+	//	}))
+	s := struct {
+		b int
+	}{}
 
-	utils.NoErr(
-		client.Agent().ServiceRegister(&api.AgentServiceRegistration{
-			ID:      "htt",
-			Name:    "http-server2",
-			Address: "localhost",
-			Port:    8080,
-			Meta:    map[string]string{"ke": "v"},
-			Check: &api.AgentServiceCheck{
-				HTTP:     "localhost:8080",
-				Method:   "GET",
-				Interval: (1 * time.Second).String(),
-			},
-		}))
+	fmt.Println(s.b)
 }
 
 func CheckFileExist(filePath string) bool {
