@@ -55,6 +55,7 @@ func (s *TestServiceSuit)TestBaseServiceHealth()  {
 
 }
 
+
 func TestServiceSuite(t *testing.T) {
 	suite.Run(t, new(TestServiceSuit))
 }

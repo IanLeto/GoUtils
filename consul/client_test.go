@@ -1,11 +1,15 @@
 package consul
 
 import (
+	"GoUtils/utils"
+	"encoding/json"
 	"fmt"
 	"github.com/hashicorp/consul/api"
+	"github.com/hashicorp/consul/watch"
 	"github.com/stretchr/testify/suite"
 	"reflect"
 	"testing"
+	"time"
 	"transfer/logging"
 )
 
@@ -33,6 +37,29 @@ func (s *TestConsulClientSuite) TestKVGet() {
 }
 
 func (s *TestConsulClientSuite) TestKVPut() {
+
+}
+
+func (s *TestConsulClientSuite) TestWatch() {
+	watchConfig := make(map[string]interface{})
+
+	//watchConfig["type"] = "keyprefix"
+	watchConfig["prefix"] = "ian/"
+	watchPlan, err := watch.Parse(watchConfig)
+
+	if err != nil {
+		panic(err)
+	}
+	watchPlan.Handler = func(u uint64, i interface{}) {
+		services := i.(api.KVPairs)
+		str, err := json.Marshal(services)
+		utils.NoErr(err)
+		fmt.Println(string(str))
+	}
+	if err := watchPlan.Run("localhost:8500"); err != nil {
+		panic(err)
+	}
+	time.Sleep(1000 * time.Second)
 
 }
 func (s *TestConsulClientSuite) TestKVInTransfer() {
@@ -147,9 +174,9 @@ func (s *TestConsulClientSuite) TestHealth() {
 	a, _, _ := s.Cli.Client.Health().Service("httpServer", "", false, nil)
 	logger := logging.GetStdLogger()
 	for _, value := range a {
-		logger.Infof("value.Service.ID %v",value.Service.ID)
-		logger.Infof("value.Service.Service %v",value.Service.Service)
-		logger.Infof("value.Service.Tags %v",value.Service.Tags)
+		logger.Infof("value.Service.ID %v", value.Service.ID)
+		logger.Infof("value.Service.Service %v", value.Service.Service)
+		logger.Infof("value.Service.Tags %v", value.Service.Tags)
 	}
 	//health := s.Cli.Client.Health()
 }

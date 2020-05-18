@@ -13,8 +13,8 @@ type TestconsulRe_testSuite struct {
 }
 
 func (s *TestconsulRe_testSuite) TestFunc() {
-	str := "bk_bkmonitorv3_enterprise_production/metadata/data_id/manual/bkmonitorv3-2068018684/1500419"
-	ok, err := regexp.MatchString("data_id/manual", str)
+	str := "bk_bkmonitorv3_enterprise_production/metadata/manual/bkmonitorv3-2068018684/1500419"
+	ok, err := regexp.MatchString("manual", str)
 	if err != nil {
 		panic(err)
 	}
@@ -25,10 +25,6 @@ func (s *TestconsulRe_testSuite) TestFunc() {
 		fmt.Println(st[len(st)-2])
 
 	}
-
-}
-
-func (s *TestconsulRe_testSuite) SetupTest() {
 
 }
 
